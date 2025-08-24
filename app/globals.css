@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https:/* fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); */
+
+:root {
+  --primary-color: #f97316;
+  --secondary-color: #ffffff;
+  --font-family: 'Inter', sans-serif;
+  --brand-name: 'GlamCS';
+  --project-type: 'e-commerce store';
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .brand-text {
+    color: var(--primary-color);
+  }
+  
+  .brand-bg {
+    background-color: var(--primary-color);
+  }
+}
